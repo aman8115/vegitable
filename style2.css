@@ -1,0 +1,189 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    cursor: pointer;
+    background-color: grey;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: large;
+    margin-top: 30px ;
+    
+    
+}
+.ul{
+    display: flex;
+    list-style: none;
+    gap: 20px ;
+    text-decoration: underline;
+    text-transform: uppercase;
+   color: chartreuse;
+    font-weight: 900;
+    font-style: normal;
+    animation-name:spacechange ;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+   position: relative;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+
+}
+li:hover{
+    font-size: larger;
+    background-color: white;
+  
+}
+button{
+ font-size: larger;
+ border-style: none;
+ background-color: white;
+ margin-right: 20px ;
+}
+button:hover{
+   background-color:aquamarine;
+   border-radius: 9%;
+  font-size: x-large;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    color: yellow;
+   font-size: larger;
+
+}
+
+
+    
+
+.herosection{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    align-items: center;
+    justify-content: center;
+    gap: 15px ;
+    animation-name:spacechange ;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+   
+   position: relative;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+
+  
+}
+
+@keyframes spacechange{
+    0%{
+        top:20px ; right: 0px ;
+        bottom: 0px ; left: 0px ;
+    }
+    25%{
+        top: 20px ;
+        right: 0px ;
+        bottom: 20px ;
+        left: 0px;
+    }
+    50%{
+        top: 20px ;
+        right: 10px;
+        bottom: 20px ;
+        left: 10px ;
+    }
+    75%{
+        top: 20px ;
+        right: 10px;
+        bottom: 20px ;
+        left: 10px ;
+    }
+    100%{
+        top: 30px ;
+        right: 10px;
+        bottom: 30px ;
+        left: 10px ;
+    }
+}
+main div img{
+    height: 300px ;
+    width: 300px ;
+    border: 2px solid red;
+}
+p{
+    margin-left: 100px ;
+}
+.footer{
+    margin-top: 30px ;
+    margin-bottom: 20px ;
+    margin-left: 20px ;
+    display: flex;
+    gap: 25px ;
+    justify-content: space-between;
+   
+
+}
+.footerul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 10px ;
+    font-weight: 600;
+    font-size: 15px ;
+}
+.span{
+    margin-right: 20px ;
+    font-size: larger;
+    font-weight: 800;
+    color: chartreuse;
+}
+@media screen and (max-width:768px ) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+      
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    .ul{
+        
+      
+        gap: 10px ;
+      
+    }
+    .herosection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+        
+        
+    }
+    main div img{
+        height: 200px ;
+        width: 200px ;
+        border: 2px solid red;
+    }
+    button{
+        margin-top: 30px ;
+
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
